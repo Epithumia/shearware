@@ -4,10 +4,8 @@ import store from './store'
 import VuePapaParse from 'vue-papa-parse'
 import './assets/css/index.css'
 import 'vue-tailwind-elements/src/tailwind-forms.min.css';
-import VueTailwindElements from 'vue-tailwind-elements';
 import VueShortKey from 'vue-shortkey'
 
-Vue.use(VueTailwindElements)
 Vue.use(VuePapaParse)
 Vue.use(VueShortKey)
 

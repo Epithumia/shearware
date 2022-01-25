@@ -135,9 +135,12 @@
 import {mapState, mapActions} from 'vuex';
 import store from "@/store";
 import * as type from "@/store/mutationTypes/types";
+import teTabs from "@/components/teTabs";
+import teSelect from "@/components/teSelect";
 //https://www.npmjs.com/package/undo-redo-vuex
 
 export default {
+  components: {teTabs, teSelect},
   data: () => ({
     headers: [{label: 'Réponses', field: 'answer'}, {label: '=>', field: 'button'}, {
       label: 'Renommage',
@@ -270,3 +273,9 @@ export default {
   }
 }
 </script>
+
+<style>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</style>
